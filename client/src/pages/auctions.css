@@ -1,0 +1,35 @@
+/* End of Auctions Banner  */
+.auctions_feature{
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    padding-bottom: 2rem;
+}
+.auctions_feature .content-frame-link{
+    display: block;
+    text-align: center;
+}
+.title{
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+.date{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 0.1rem 2rem 0.4rem 2rem;
+    border-radius: 10px;
+    background: var(--light-bgc);
+}
+@media (max-width: 900px){
+    .auctions_feature{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 600px){
+    .auctions_feature{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+

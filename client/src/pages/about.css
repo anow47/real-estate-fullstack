@@ -1,0 +1,204 @@
+.about{
+    background-image: url('../images/pexels-rushdi-fatani-782816372-19174886.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-overlay{
+    padding-top: 100px;
+    padding-bottom: 5rem;
+    background-color: rgba(50, 51, 51, 0.81);
+    padding-right: var(--section-padding);
+    padding-left: var(--section-padding);
+}
+.about-main{
+    gap: 2rem;
+}
+.main-container{
+    width: 50%;
+    text-align: right;
+    animation: fadeInUp 1s ease-out both;
+}
+.main-container h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: fadeInUp 0.9s ease-out both;
+}
+.main-container h3{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-bottom: 3rem;
+    animation: fadeInUp 1.5s ease-out both;
+}
+.about-frame{
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background-color: #0d111dc9;
+    border-radius: 7px;
+    text-align: right;
+}
+.frame-title{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.main-container .about-frame .frame-text{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.line-seprator{
+    position: absolute;
+    width: 1px;
+    height: 75rem;
+    background-color: var(--text-color);
+    right: -1rem;
+    top: 0rem;
+}
+@media (max-width: 991px){
+    .about-overlay{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-main{
+        flex-direction: column-reverse;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .frame-text{
+        font-size: 1rem;
+    }
+    .frame-title{
+        font-size: 1.3rem;
+    }
+    .line-seprator{
+        display: none;
+    }
+}
+@media (max-width: 480px){
+    .about-overlay{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-frame{
+        padding: 1rem;
+    }
+    .frame-text{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .frame-title{
+        font-size: 1.1rem;
+    }
+    .main-container h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .main-container h3{
+        font-size: 1.2rem;
+    }
+}
+.offer-text{
+    margin: 5rem 0;
+}
+.offer-text div{
+    width: 45%;
+    text-align: left;
+}
+.offer .text-p{
+    position: relative;
+    z-index: 2;
+    width: 43%;
+    background-color: #4d413c;
+    border-radius: 7px;
+    text-align: right;
+    padding: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+.offer-content{
+    gap: 2rem;
+}
+.offer-content .about-frame{
+    background-color: var(--main-color);
+}
+.offer-left-text{
+    width: 50%;
+}
+.offer-info{
+    width: 50%;
+    height: 450px;
+}
+.offer-h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--main);
+    animation: fadeInUp 0.9s ease-in;
+}
+.offer-p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 2rem 0;
+    animation: fadeInUp 1.2s ease-out both;
+}
+.offer-info{
+    background-color: #0d111d72;
+    border-radius: 7px;
+}
+.about-frame p{
+    color: #fff;
+}
+.bullets{
+    justify-content: end;
+    margin-top: 5rem;
+}
+.bullets .bullet{
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 1rem;
+}
+.bullets .bullet:hover{
+    background-color: #fff;
+}
+
+@media (max-width: 991px){
+    .offer-text{
+        display: block;
+    }
+    .offer-text div{
+        width: 100%;
+        text-align: right;
+    }
+    .offer .text-p{
+        width: 100%;
+        padding: 0;
+    }
+    .offer-content{
+        flex-direction: column;
+    }
+    .offer-left-text, .offer-info{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .bullets{
+        display: flex;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+    .bullets .bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}

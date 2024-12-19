@@ -1,0 +1,109 @@
+.home_feature{
+    padding: 6rem var(--section-padding);
+}
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0a4a5a71;
+}
+.hero_title{
+    position: absolute;
+
+    z-index: 2;
+    color: #fff;
+}
+/* Mouse Wheel */
+.mouse {
+    position: absolute;
+    bottom: 150px;
+    z-index: 5;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block; }
+    .mouse .mouse-icon {
+      display: block;
+      width: 25px;
+      height: 45px;
+      border: 2px solid white;
+      border-radius: 15px;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out; }
+    .mouse .mouse-wheel {
+      height: 8px;
+      width: 8px;
+      margin: 2px auto 0;
+      display: block;
+      background-color: white;
+      border-radius: 50%;
+      -webkit-animation: 1.6s ease infinite wheel-up-down;
+      -moz-animation: 1.6s ease infinite wheel-up-down;
+      animation: 1.6s ease infinite wheel-up-down; }
+    .mouse:hover .mouse-icon {
+      border-color: #fff; }
+  
+  @keyframes wheel-up-down {
+    0% {
+      margin-top: 2px;
+      opacity: 0; }
+    30% {
+      opacity: 1; }
+    100% {
+      margin-top: 20px;
+      opacity: 0; } }
+  
+
+/* Home Feature  */
+.home_feature .col-lg-4{
+    animation: fadeInUp 1s ease-in;
+}
+.home_feature .content-frame-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.9rem;
+}
+.span-name {
+    text-align: center;
+    min-width: 50%;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    border: transparent;
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    transition: 0.5s;
+    background: var(--light-bgc);
+}
+
+/* ======== Media Queries (Small Devices) ======= */
+@media screen and (max-width: 900px) {
+    .home_feature{
+        padding: 3rem 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .home_feature{
+        padding: 3rem 10px;
+    }
+    .span-name {
+        font-size: 0.8rem;
+        width: 70%; /* Adjust button width */
+    }
+}

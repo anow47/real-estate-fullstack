@@ -1,0 +1,135 @@
+@import url('./settings.css');
+
+.banner_area {
+    position: relative;
+    background: var(--light-bgc);
+}
+.banner_inner_text {
+    text-align: right;
+    padding-right: var(--section-padding);
+    position: relative;
+    z-index: 2;
+}
+  .banner_inner_text h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+  .banner_inner_text p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    padding-top: 15px;
+}
+/* End Banner Area css */
+
+/* Feature Area css
+============================================================================================ */
+.service_feature{
+    padding-bottom: 3rem;
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+}
+.service_feature .feature_inner .feature_item {
+  margin-bottom: 20px;
+}
+.service_feature .feature_inner .feature_item .more_btn {
+    margin-top: 1rem;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #fff;
+	padding: 0.6rem 2rem;
+	border-radius: 1rem;
+	font-weight: 400;
+	background: var(--dark-bgc);
+	-webkit-transition: all 400ms linear 0s;
+	-o-transition: all 400ms linear 0s;
+	transition: all 400ms linear 0s;
+}
+
+.service_feature .feature_inner .feature_item:hover .more_btn {
+	color: #fff;
+	background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), color-stop(51%, var(--main-color)), to(var(--main-color)));
+	background-image: -webkit-linear-gradient(left, var(--main-color) 0%, var(--main-color) 51%, var(--main-color) 100%);
+	background-image: -o-linear-gradient(left, var(--main-color) 0%, var(--main-color) 51%, var(--main-color) 100%);
+	background-image: linear-gradient(to right, var(--main-color) 0%, var(--main-color) 51%, var(--main-color) 100%);
+}
+
+
+.feature_item .f_icon {
+    min-height: 91px;
+    position: relative;
+}
+  
+.feature_item .f_icon img {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+  
+.feature_item h4 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 45px 0px 20px 0px;
+} 
+.feature_item p {
+    font-size: 1.1rem;
+    line-height: 28px;
+    font-family: "Roboto", sans-serif;
+    color: #abbac0;
+    font-weight: 500;
+    max-width: 290px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 900px){
+    .service_feature{
+		padding-right: 30px;
+		padding-left: 30px;
+    }
+    .banner_inner_text {
+        padding-top: 250px;
+        padding-right: 20px;
+        z-index: 2;
+        top: -40px;
+    }
+    .banner_inner_text p {
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+    .banner_inner_text h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+}
+@media (max-width: 480px){
+    .service_feature{
+        padding-bottom: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banner_inner_text {
+        padding-right: 10px;
+        top: -50px;
+    }
+    .service_feature .feature_inner .feature_item {
+        margin-bottom: 20px;
+    }
+    .banner_inner_text{
+		padding-top: 250px;
+		text-align: right;
+	}
+    section{
+		padding-left: 10px;
+		padding-right: 10px;
+    }
+}
+  /* End Feature Area css */

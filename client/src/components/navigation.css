@@ -1,0 +1,161 @@
+.App-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    color: var(--white);
+    height: 60px;
+}
+.App-logo {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+.logo-link{
+    text-decoration: none;
+}
+.logo-title{
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+ /* desktop nav */
+ .desktop ul {
+    display: flex;
+}
+.desktop ul li{
+    list-style: none;
+    padding: 0.5rem;
+}
+.desktop-nav-link{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+.desktop-nav-link:hover{
+    color: var(--very-light-bgc);
+}
+/* Mobile nav */
+.mobile{
+    display: none;
+}
+.zmdi-menu{
+    font-size: 2.3rem;
+}
+.nav-list {
+    position: fixed;
+    background: #05161A;
+    min-height: 100vh;
+    padding: 4rem 0;
+    width: 25%;
+    top: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    transition: transform 0.4s;
+    transform: translateX(-100%);
+    z-index: 3;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #17191ead;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s;
+}
+
+.showOverlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.zmdi-close {
+    font-size: 2rem;
+    font-weight: 600;
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    color: var(--text-color);
+}
+
+.zmdi-close:hover {
+    color: #fff;
+}
+.nav-list li {
+    display: block;
+    font-weight: 600;
+}
+.nav-link{
+    display: block;
+    padding: 1.5rem 10%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.433);
+}
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: padding-left 0.3s;
+}
+
+.nav-list a:hover {
+    padding-left: 1rem;
+}
+
+.showMenu {
+    transform: translateX(0);
+}
+
+@media (max-width: 900px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .nav-list {
+        width: 60%; /* Make the nav-list take up even more space on small screens */
+    }
+    .App-header {
+        flex-direction: row-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* Small screens (phones, smaller tablets) */
+@media (max-width: 600px) {
+    .App-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .App-logo .en {
+        font-size: 0.8rem;
+    }
+    .zmdi-menu {
+        font-size: 2.8rem;
+    }
+    .zmdi-close {
+        top: 30px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+    .nav-link{
+        font-size: 0.9rem;
+    }
+}
