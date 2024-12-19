@@ -2,34 +2,35 @@ import React, { useState, useRef, useEffect } from 'react';
 import MapWithPins from '../components/MapWithPins';
 import listingsData from '../Data/mapData';
 import { Link } from 'react-router-dom';
-import ImagePopup from '../components/ImagePopup';
+// import ImagePopup from '../components/ImagePopup';
 import './projects.css';
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
 function Projects() {
     const listings = listingsData;
-    const [selectedImages, setSelectedImages] = useState(null);
+    // const [selectedImages, setSelectedImages] = useState(null);
     const [selectedLocation, setSelectedLocation] = useState(null);
     const [items, setItems] = useState([]);
     const projectRefs = useRef({});
     const popupRef = useRef(null);
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const res = await fetch(baseUrl);
-    //         const data = await res.json();
-    //         setItems(data);
-    //     }
-    //     fetchData();
-    // }, []);
+    useEffect(() => {
+        const fetchData = async () => {
+            const res = await fetch(baseUrl);
+            const data = await res.json();
+            setItems(data);
+        }
+        fetchData();
+    }, []);
+    console.log(items)
 
-    const openImagePopup = (images) => {
-        setSelectedImages(images);
-    };
+    // const openImagePopup = (images) => {
+    //     setSelectedImages(images);
+    // };
 
-    const closeImagePopup = () => {
-        setSelectedImages(null);
-    };
+    // const closeImagePopup = () => {
+    //     setSelectedImages(null);
+    // };
 
     const handleMarkerClick = (location) => {
         setSelectedLocation(location);
@@ -50,7 +51,7 @@ function Projects() {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (popupRef.current && !popupRef.current.contains(event.target)) {
-                closeImagePopup();
+                // closeImagePopup();
             }
         };
     

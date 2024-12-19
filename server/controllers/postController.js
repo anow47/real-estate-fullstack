@@ -73,8 +73,8 @@ const listingsData = [
     },
 ]
 
-export const listing = (req, res) => {
-    const id = parseInt(req.params.id);
-    const data = listingsData.find(item => item.id === id);
-    res.json(data);
-};
+// export const listing = (req, res) => {
+//     const id = parseInt(req.params.id);
+//     const data = listingsData.find(item => item.id === id);
+//     res.json(data);
+// };
