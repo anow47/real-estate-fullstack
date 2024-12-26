@@ -11,7 +11,7 @@
 .title{
     font-size: 1rem;
     color: #fff;
-    padding-bottom: 0.5rem;
+    padding: 1rem 0 0.5rem 0;
 }
 .date{
     color: var(--text-color);
@@ -19,6 +19,22 @@
     padding: 0.1rem 2rem 0.4rem 2rem;
     border-radius: 10px;
     background: var(--light-bgc);
+}
+.img_container{
+    position: relative;
+}
+.status{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: var(--light-bgc);
+    border-radius: 4px;
+    width: 4rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
 }
 @media (max-width: 900px){
     .auctions_feature{

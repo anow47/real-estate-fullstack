@@ -6,7 +6,7 @@ import Projects from '../pages/Projects';
 import Auctions from '../pages/Auctions';
 import Services from '../pages/Services';
 import AboutUs from '../pages/AboutUs';
-import ProjectDisplay from '../pages/ProjectDisplay';
+import AuctionsDetails from '../pages/AuctionDetails'
 
 export default function PageWrapper() {
     const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +30,7 @@ export default function PageWrapper() {
                     <Route path='/auctions' element={<Auctions />} />
                     <Route path='/services' element={<Services />} />
                     <Route path='/about' element={<AboutUs />} />
-                    <Route path='/projectDisplay' element={<ProjectDisplay />} />
+                    <Route path='/auction/:id' element={<AuctionsDetails />} />
                 </Routes>
             )}
         </div>

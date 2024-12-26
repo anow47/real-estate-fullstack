@@ -5,7 +5,8 @@ import PageWrapper from './components/PageWrapper';
 
 function App() {
     return (
-        <Router>
+        // the basename routes to home page in production or gh-pages
+        <Router basename="/real-estate-fullstack">
             <div className="App">
                 <Navigation />
                 <PageWrapper />

@@ -1,52 +1,58 @@
 
- const auctionsData = [
+const auctionsData = [
     {
+        id: 1,
         img: require('../images/Listings/دقة-فيلا-1.jpg'),
-        date: "الاربعاء 25/09/2025",
+        images: [require('../images/Listings/دقة-فيلا-1.jpg'), require('../images/Listings/دقة-فيلا-2.jpg'), require('../images/Listings/دفيلا-3.jpg')],
+        description: 'مجمع سكني يتكون من عدة مباني في  حي الملقا في شمال الرياض',
+        type: 'عمارة سكنية',
+        endDate: "2024-01-10T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
     {
+        id: 2,
         img: require('../images/Listings/مشروع ديم1.png'),
-        date: "الاربعاء 25/09/2025",
+        images: [require('../images/Listings/مشروع ديم1.png'), require('../images/Listings/مشروع ديم2.png'), require('../images/Listings/مشروع ديم3.png')],
+        description: 'مشروع ديم في حي القادسية مشروع مميز و فريد من نوعه ضمان شامل لمدة سنة ضمان على الهيكل الإنشائي 10 سنوات',
+        type: 'عمارة سكنية',
+        endDate: "2025-02-10T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
     {
+        id: 3,
         img: require('../images/Listings/ديار-22.jpg'),
-        date: "الاربعاء 25/09/2025",
+        images: [require('../images/Listings/ديار-22.jpg'), require('../images/Listings/ديار-221.jpg'), require('../images/Listings/ديار222.jpg')],
+        description: 'مشروع سكني يتكون من مبني واحد يوجد فيه 14 شقة',
+        type: 'عمارة سكنية',
+        endDate: "2025-01-28T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
     {
+        id: 4,
         img: require('../images/Listings/خوالد.jpg'),
-        date: "الاربعاء 21/08/2024",
+        images: [require('../images/Listings/خوالد.jpg'), require('../images/Listings/خوالد-2.jpg'), require('../images/Listings/خوالد-3.jpg')],
+        description: 'مشروع خوالد 09 يقع في شمال الرياض في حي الياسمين يتكون من 138 وحدة عقارية متاح منها الان 65 وحدة',
+        type: 'عمارة سكنية',
+        endDate: "2025-03-01T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
     {
+        id: 5,
         img: require('../images/Listings/ديار 17-1.jpg'),
-        date: "الاربعاء 20/08/2024",
+        images: [require('../images/Listings/ديار 17-1.jpg'), require('../images/Listings/ديار 17-2.jpg'), require('../images/Listings/ديار 17-3.jpg'), require('../images/Listings/ديار 17-4.jpg')],
+        description: 'ديار 17 مشروع سكني يتكون من 2 مبني بعدد 45 شقة بحي قرطبة في مدينة الرياض',
+        type: 'عمارة سكنية',
+        endDate: "2025-02-15T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
     {
+        id: 6,
         img: require('../images/Listings/مشروع-رسن-2.png'),
-        date: "الاربعاء 20/08/2024",
+        images: [require('../images/Listings/مشروع-رسن-22.png'), require('../images/Listings/مشروع-رسن-2.png')],
+        description: 'مشروع رسن 2 مشروع مميز في حي القادسية شرق الرياض يضم شقق متعددة و بضمانات طويلة المدي',
+        type: 'عمارة سكنية',
+        endDate: "2025-04-10T00:00:00",
         title: "مزاد غربيات الرياض2",
-        conatctUrl: "#",
-        detailsUrl: "#",
-        status: 'running'
     },
 ]
 export default auctionsData;
