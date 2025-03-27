@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/real-estate-fullstack/static/css/main.3cbdd106.css",
-    "main.js": "/real-estate-fullstack/static/js/main.3e826318.js",
+    "main.css": "/real-estate-fullstack/static/css/main.41645aed.css",
+    "main.js": "/real-estate-fullstack/static/js/main.ce0ed754.js",
     "static/media/hero-video.mp4": "/real-estate-fullstack/static/media/hero-video.f89e29da722ab3ad622b.mp4",
     "static/media/دفيلا-3.jpg": "/real-estate-fullstack/static/media/دفيلا-3.19d0e7d74e8b109f8547.jpg",
     "static/media/دقة-فيلا-1.jpg": "/real-estate-fullstack/static/media/دقة-فيلا-1.a425d3213a7767368beb.jpg",
@@ -33,11 +33,11 @@
     "static/media/f-icon-3.png.webp": "/real-estate-fullstack/static/media/f-icon-3.png.59b8d42f3f37a79b5a30.webp",
     "static/media/f-icon-6.png.webp": "/real-estate-fullstack/static/media/f-icon-6.png.6369e1ce541d8d200f95.webp",
     "index.html": "/real-estate-fullstack/index.html",
-    "main.3cbdd106.css.map": "/real-estate-fullstack/static/css/main.3cbdd106.css.map",
-    "main.3e826318.js.map": "/real-estate-fullstack/static/js/main.3e826318.js.map"
+    "main.41645aed.css.map": "/real-estate-fullstack/static/css/main.41645aed.css.map",
+    "main.ce0ed754.js.map": "/real-estate-fullstack/static/js/main.ce0ed754.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cbdd106.css",
-    "static/js/main.3e826318.js"
+    "static/css/main.41645aed.css",
+    "static/js/main.ce0ed754.js"
   ]
 }
