@@ -8,20 +8,41 @@
 }
 
 .top-title{
-    color: #fff;
+  color: #fff;
 }
 [timer-root] [status] {
   display: none;
+}
+.select-wrapper {
+  position: relative;
+  width: 100%;
 }
 .input {
   width: 100%;
   border: none;
   border-radius: 10px;
-  padding: 5px 10px 0 10px;
-  height: 42px;
-  font-size: 16px;
+  padding: 5px 10px 0 0;
+  height: 45px;
+  font-weight: 600;
+  font-size: 1rem;
   background: var(--light-bgc);
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  cursor: pointer;
+  color: var(--text-color);
 }
+.select-wrapper::before {
+  content: '^';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--text-color);
+  transform: rotate(180deg);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .input::placeholder {
   color: #ddd;
 }
@@ -83,9 +104,6 @@
 .bold {
   font-weight: 700;
 }
-.font-2 {
-  font-family: var(--secondary-font-regular);
-}
 .d-flex {
   display: flex;
   display: -webkit-flex;
@@ -99,11 +117,6 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   text-transform: none;
-}
-button,
-input,
-select {
-  font-family: var(--main-font-regular);
 }
 .center {
   text-align: center;
@@ -152,7 +165,7 @@ select {
   color: #fff;
   cursor: pointer;
   width: 100%;
-  height: 38px;
+  height: 45px;
   font-size: 20px;
   border-radius: 10px;
   padding-top: 4px;

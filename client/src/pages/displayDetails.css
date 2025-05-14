@@ -7,7 +7,7 @@
 .auction_type{
     text-align: center;
     margin: 1rem auto;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--main);
 }
@@ -15,6 +15,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
+}
+.img-map-conatiner{
+    display: grid;
+    gap: inherit;
+    height: fit-content;
 }
 .auction_img{
     position: relative;
@@ -26,17 +31,18 @@
     height: 100%;
     border-radius: 7px;
 }
-
+/* Location on map */
 /* auction details */
 .auction_details{
     text-align: right;
 }
 .auction_details-title{
-    background-color: var(--main-color);
-    color: var(--text-color);
-    font-size: 1.2rem;
-    padding: 1rem;
+    background-color: var(--very-light-bgc);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 7px;
+    margin: 0;
 }
 .auction_details_description-container{
     background-color: rgb(212, 219, 243);
@@ -44,10 +50,122 @@
     border-radius: 7px;
     color: var(--light-bgc);
     font-weight: 600;
-    height: 200px;
+    min-height: 200px;
+    margin: 0.5rem auto;
+}
+.auction-time{
+    display: grid;
+    gap: 0.5rem;
+}
+.start-date-parg{
+    color: var(--very-light-bgc);
+    font-size: 1.1rem;
+}
+.start-date{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.zmdi-calendar-close,
+.zmdi-calendar{
+    font-size: 1.5rem;
+}
+.zmdi-time{
+    font-size: 2rem;
+}
+.back-btn-icon{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+}
+/* Conatcts */
+.auction-onwer-title{
+    font-size: 0.8rem;
+    color: gray;
+    margin: 0;
+}
+.auction-owner{
+    font-size: 1rem;
 }
 .back-btn{
-    margin-top: 2rem;
+    padding-bottom: 0.6rem;
+}
+.contact-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 20px;
+}
+.whatsapp-btn, .call-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.whatsapp-btn {
+    background: #25d365a2;
+    color: white;
+}
+
+.call-btn {
+    background: var(--main-color);
+    color: white;
+}
+.whatsapp-btn:hover{
+    background-color: #25d365e9;
+} 
+.call-btn:hover {
+    background-color: var(--very-light-bgc);
+}
+/* Auction_details_description-about  */
+.auction_details_description-city{
+    font-size: 1.1rem;
+    font-weight: 800;
+    background: #c1c7dc;
+    padding: 0.6rem;
+    border-radius: 7px;
+}
+.auction_details_description-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.description-about-header{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.square-area{
+    display: flex;
+    align-items: center;
+}
+.auction_details_description-diminstions{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #c1c7dc;
+    border-radius: 7px;
+}
+.square-area-header{
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+    }
+    
+    .whatsapp-btn, .call-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 900px){
@@ -58,6 +176,9 @@
     .auction_container{
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    .img-map-conatiner{
+        gap: inherit;
     }
 }
 @media (max-width: 480px){

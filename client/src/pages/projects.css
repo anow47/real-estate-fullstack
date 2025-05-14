@@ -29,7 +29,7 @@
     padding: 0px 0 5px 0;
     position: relative;
 }
-.projects_feature .feature_item .region{
+.region-tag{
     position: absolute;
     left: 15px;
     top: 15px;
@@ -43,7 +43,7 @@
 }
 .content-frame-link-title{
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--white);
 }
 .description-container{
     padding: 0;
@@ -61,6 +61,9 @@
     justify-content: center;
     margin: 1rem 0;
 }
+.description{
+    color: var(--text-color);
+}
 /* ======== Media Queries (Small Devices) ======= */
 @media (max-width: 900px){
     .projects{
@@ -72,9 +75,6 @@
     .projects{
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .map_container{
-        /* margin-top: 0px; */
     }
     .projects_feature{
         padding-bottom: 3rem;

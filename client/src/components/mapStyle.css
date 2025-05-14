@@ -63,15 +63,16 @@
     padding: 10px;
 }
 
-.popup a {
+.popup-title{
     margin: 5px 0;
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
     display: block;
     font-weight: bold;
+    cursor: pointer;
 }
-.popup a:hover{
+.popup-title:hover{
     color: #ffff;
 }
 /* Custom styles for zoom controls */

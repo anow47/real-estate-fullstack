@@ -6,8 +6,7 @@ export default function Navigation() {
     const navItems = [
         { name: 'الرئيسية', path: '/' },
         { name: 'مشاريع عقارية', path: '/projects' },
-        { name: 'المزادات العقارية', path: '/auctions' },
-        { name: 'خدماتنا التسويقية', path: '/services' },
+        { name: 'مزادات عقارية', path: '/auctions' },
         { name: 'من نحن', path: '/about' }
     ];
 

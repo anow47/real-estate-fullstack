@@ -29,7 +29,7 @@ const AuctionCountdown = ({ auctionDate }) => {
       if (distance < 0) {
         clearInterval(timer);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        document.querySelector('.status').textContent = 'منتهي';
+        document.querySelector('.region-tag').textContent = 'منتهي';
         return;
       }
 
@@ -45,13 +45,11 @@ const AuctionCountdown = ({ auctionDate }) => {
   }, [auctionDate]);
 
   return (
-    <div className="countdown-container">
-      <div className="countdown-boxes">
-        <TimeUnit value={timeLeft.seconds} label="ثانية" />
-        <TimeUnit value={timeLeft.minutes} label="دقيقة" />
-        <TimeUnit value={timeLeft.hours} label="ساعة" />
-        <TimeUnit value={timeLeft.days} label="يوم" />
-      </div>
+    <div className="countdown-boxes">
+      <TimeUnit value={timeLeft.seconds} label="ثانية" />
+      <TimeUnit value={timeLeft.minutes} label="دقيقة" />
+      <TimeUnit value={timeLeft.hours} label="ساعة" />
+      <TimeUnit value={timeLeft.days} label="يوم" />
     </div>
   );
 };

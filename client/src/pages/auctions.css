@@ -7,6 +7,7 @@
 .auctions_feature .content-frame-link{
     display: block;
     text-align: center;
+    padding: 0 1rem;
 }
 .title{
     font-size: 1rem;
@@ -22,19 +23,6 @@
 }
 .img_container{
     position: relative;
-}
-.status{
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    background-color: var(--light-bgc);
-    border-radius: 4px;
-    width: 4rem;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-align: center;
-    z-index: 1;
 }
 @media (max-width: 900px){
     .auctions_feature{

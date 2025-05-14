@@ -1,6 +1,4 @@
-// src/components/MapWithPins.js
-import React from 'react';
-import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import 'react-leaflet-markercluster/dist/styles.min.css';
@@ -16,7 +14,7 @@ const customIcon = new L.Icon({
 });
 
 const MapWithPins = ({ listings, onMarkerClick}) => {
-  
+  const navigate = useNavigate();
   const createClusterCustomIcon = function (cluster) {
     return L.divIcon({
       html: `<span>${cluster.getChildCount()}</span>`,
@@ -40,19 +38,15 @@ const MapWithPins = ({ listings, onMarkerClick}) => {
             {listings.map((location) => (
               <Marker
                 key={location.id}
-                position={[location.lat, location.lng]}
+                position={[location.latitude, location.longitude]}
                 icon={customIcon}
                 >
                 <Popup>
                   <div className='popup'>
                     <span className="region">{location.region}</span>
                     <img src={location.img} alt={location.title} />
-                    <div className="popup-content">
-                      <Link href='https://'
-                        onClick={(e) => { e.preventDefault();
-                        onMarkerClick(location); }}>
-                          {location.title}
-                      </Link>
+                    <div className="popup-content" onClick={() => navigate(`/details/${location.id}`)}>
+                      <h1 className='popup-title'>{location.title}</h1>
                     </div>
                   </div>
                 </Popup>
