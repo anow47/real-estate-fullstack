@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/real-estate-fullstack/static/css/main.41645aed.css",
-    "main.js": "/real-estate-fullstack/static/js/main.ce0ed754.js",
+    "main.css": "/real-estate-fullstack/static/css/main.82b1d3d3.css",
+    "main.js": "/real-estate-fullstack/static/js/main.987fbb7b.js",
     "static/media/hero-video.mp4": "/real-estate-fullstack/static/media/hero-video.f89e29da722ab3ad622b.mp4",
     "static/media/دفيلا-3.jpg": "/real-estate-fullstack/static/media/دفيلا-3.19d0e7d74e8b109f8547.jpg",
     "static/media/دقة-فيلا-1.jpg": "/real-estate-fullstack/static/media/دقة-فيلا-1.a425d3213a7767368beb.jpg",
@@ -26,18 +26,12 @@
     "static/media/خوالد-3.jpg": "/real-estate-fullstack/static/media/خوالد-3.650242d7588909856b84.jpg",
     "static/media/map-pin-icon.png": "/real-estate-fullstack/static/media/map-pin-icon.c65d23ffa193ca9b1d02.png",
     "static/media/architecture.webp": "/real-estate-fullstack/static/media/architecture.e33f7985d55767dbb8f1.webp",
-    "static/media/f-icon-5.png.webp": "/real-estate-fullstack/static/media/f-icon-5.png.d51ec55aa9ab606bd1a1.webp",
-    "static/media/f-icon-4.png.webp": "/real-estate-fullstack/static/media/f-icon-4.png.a2fd33ff52ac7d443a62.webp",
-    "static/media/f-icon-1.png.webp": "/real-estate-fullstack/static/media/f-icon-1.png.cf887efb79b6f58a0c6c.webp",
-    "static/media/f-icon-2.png.webp": "/real-estate-fullstack/static/media/f-icon-2.png.46dffc762f74f2e0d42b.webp",
-    "static/media/f-icon-3.png.webp": "/real-estate-fullstack/static/media/f-icon-3.png.59b8d42f3f37a79b5a30.webp",
-    "static/media/f-icon-6.png.webp": "/real-estate-fullstack/static/media/f-icon-6.png.6369e1ce541d8d200f95.webp",
     "index.html": "/real-estate-fullstack/index.html",
-    "main.41645aed.css.map": "/real-estate-fullstack/static/css/main.41645aed.css.map",
-    "main.ce0ed754.js.map": "/real-estate-fullstack/static/js/main.ce0ed754.js.map"
+    "main.82b1d3d3.css.map": "/real-estate-fullstack/static/css/main.82b1d3d3.css.map",
+    "main.987fbb7b.js.map": "/real-estate-fullstack/static/js/main.987fbb7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.41645aed.css",
-    "static/js/main.ce0ed754.js"
+    "static/css/main.82b1d3d3.css",
+    "static/js/main.987fbb7b.js"
   ]
 }
